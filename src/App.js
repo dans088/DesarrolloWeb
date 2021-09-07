@@ -2,6 +2,7 @@ import "./App.css";
 import "./index.css";
 import React, { useState, useContext, useEffect } from "react";
 import {Home, About, Dashboard} from "./components/NewInput"
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -54,7 +55,7 @@ export default function BasicExample()
     <Router>
       <Link style={{padding: "30px"}} to= "/">Home</Link>
 
-      <Link style={{padding: "30px"}} to= "/about">About</Link>
+      <Link style={{padding: "30px"}} to= "/carrousel">Carrousel</Link>
 
       <Link style={{padding: "30px"}} to= "/dashboard">Dashboard</Link>
     
@@ -62,9 +63,9 @@ export default function BasicExample()
 
     <Switch>
       <Route exact path = "/">
-        <Home />
+        <Home getInfo = {App}/>
       </Route>
-      <Route exact path = "/about">
+      <Route exact path = "/carrousel">
         <About />
       </Route>
       <Route exact path = "/dashboard">
