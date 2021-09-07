@@ -1,9 +1,28 @@
-import React from "react";
+//import React from "react";
+import React  from "react";
 
-const NewInput = (props) =>
-  
-(
-    <input {...props} />
-)
+function Home() {
+    return (
+        <div>
+            <h2>Home</h2>
+        </div>
+    );
+}
 
-export default NewInput;
+function About(){
+    return(
+        <div>
+            <h2>About</h2>
+        </div>
+    );
+}
+
+function Dashboard(){
+    return(
+        <div>
+            <h2>Dashboard</h2>
+        </div>
+    );
+}
+
+export {Home,About,Dashboard};
