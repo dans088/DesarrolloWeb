@@ -1,18 +1,19 @@
 //import React from "react";
 import React  from "react";
 
-function Home() {
+function Home({getInfo}) {
+
     return (
-        <div>
-            <h2>Home</h2>
-        </div>
+        
+        getInfo()
+        
     );
 }
 
 function About(){
     return(
         <div>
-            <h2>About</h2>
+            <h2>Carrousel</h2>
         </div>
     );
 }
