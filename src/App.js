@@ -128,14 +128,18 @@ function App() {
 
       <Switch>
         <Route path={"/usuarios"}>
-          <Container style={{ padding: 30 }} />
+          <Container style={{ padding: 30 }}>
+            <u>
+              <Usuarios data={nombres}/>{" "}
+            </u>
+          </Container>
         </Route>
         <Route path={"/Formulario"}>
           <Container style={{ padding: 20 }}>
             <div onChange={(e) => setData(e)}>
-              <input id="1" placeholder={"Nombre"} />
-              <input id="2" placeholder={"Apellido"} />
-              <input id="3" placeholder={"Edad"} />
+              <input id="1" placeholder={"Nombre"} onChange={(e) => setData(e)}/>
+              <input id="2" placeholder={"Apellido"} onChange={(e) => setData(e)} />
+              <input id="3" placeholder={"Edad"}  onChange={(e) => setData(e)} />
             </div>
           </Container>
         </Route>

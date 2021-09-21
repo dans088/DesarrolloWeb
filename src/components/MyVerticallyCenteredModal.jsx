@@ -23,6 +23,7 @@ export default function MyVerticallyCenteredModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
+        <h2> Centered Modal </h2>
         <Usuarios data={props.nombres} />
       </Modal.Body>
       <Modal.Footer>
