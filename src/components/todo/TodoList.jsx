@@ -15,6 +15,7 @@ const TodoList = ({ todos, deleteTodo }) => (
           <IconButton
             aria-label="Delete"
             onClick={() => {
+              props._handleClick(todo.name)
               deleteTodo(index);
             }}
           >
